@@ -1,0 +1,70 @@
+- name: Setup Minecraft
+  # You may pin to the exact commit or the version.
+  # uses: mcenv/setup-minecraft@1f62c3888e64af620b18f631508e47b681d48eb4
+  uses: mcenv/setup-minecraft@v3.3.1
+  with:
+    # Minecraft version to use
+    version: # optional, default is release
+    # Whether to install Minecraft
+    install: # optional, default is true
+    # Whether to cache Minecraft
+    cache: # optional
+    # Number of retries to download Minecraft
+    retries: # optional, default is 3
+- name: Minecraft AFK-Bot
+  # You may pin to the exact commit or the version.
+  # uses: Minionguyjpro/Afk-bot@8d1f4c98db4322198104263228e474310b6766f0
+  uses: Minionguyjpro/Afk-bot@v1.0.4
+  with:
+    # The IP of the Minecraft server.
+    ip: # default is example.ip.org
+    # The port of the Minecraft server.
+    port: # optional, default is 25565
+    # The username of the bot displayed in the Minecraft server.
+    name: # optional, default is afkbot
+    # Make's the bot automatically skip the night in the Minecraft server.
+    auto-night-skip: # optional, default is false
+- name: Minecraft package world
+  # You may pin to the exact commit or the version.
+  # uses: aksiome/minecraft-package@df0de05141c089f5d093fade6d5f3111a982fc3f
+  uses: aksiome/minecraft-package@v0.0.3
+  with:
+    # The world directory to compress
+    source: 
+    # The target zip file
+    target: 
+    # The mcwpack config file
+    config: # default is mcwpack.yaml
+    # The version of mcwpack to install
+    version: # default is latest
+- name: upload-to-roblox
+  # You may pin to the exact commit or the version.
+  # uses: Ulferno/upload-to-roblox@ef8c2deeb2d0c1d3c11a3d39bf5f69f18fa09970
+  uses: Ulferno/upload-to-roblox@v1.0.4
+  with:
+    # API key for publishing place
+    api-key: 
+    # The id of the universe where the place is located
+    universeId: 
+    # The id of place to upload to
+    placeId: 
+    # File to upload
+    file: 
+    # Should the file be saved and published (true) or just saved (false)
+    shouldPublish: # optional, default is true
+- name: Publish Roblox Place
+  # You may pin to the exact commit or the version.
+  # uses: filiptibell/roblox-place-publish-action@d58ccc461ab76576728c3262590efa9f8279037e
+  uses: filiptibell/roblox-place-publish-action@v2.1
+  with:
+    # The universe id of the place to publish
+    universe-id: # default is -1
+    # The place id of the place to publish
+    place-id: # default is -1
+    # The Open Cloud API key with permissions to publish the place
+    api-key: # default is 
+    # The path to the place file to publish
+    path: # default is place.rbxl
+    # The maximum number of times to try to publish before failing
+    max-retries: # optional, default is 3
+
