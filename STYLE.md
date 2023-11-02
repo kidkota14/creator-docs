@@ -149,7 +149,7 @@ The following table contains some examples and how they render in the documentat
     </tr>
     <tr>
       <td><code>`Library.coroutine.create()`</code></td>
-      <td><code><a href="https://create.roblox.com/docs/reference/engine/libraries/coroutine">coroutine.create()</a></code></td>
+      <td><code><a ">coroutine.create()</a></code></td>
     </tr>
   </tbody>
 </table>
@@ -204,11 +204,5 @@ Alerts are a great way to call attention to important information or offset bloc
 <Alert severity="warning">
 This is a beta feature and is subject to change in future releases.
 </Alert>
-```
-
-There are four options for `severity`:
-
-- `error`
-- `info`
 - `success`
 - `warning`
